@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assaytablecleaner"
+version = "0.1.0"
+description = "Parse, standardize, and convert bioassay measurement values"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pandas>=1.5.0",
+    "numpy>=1.21.0",
+]
+license = {text = "MIT"}
+authors = [
+    {name = "CompBio Toolkit Suite"},
+]
+readme = "README.md"
+
+[project.scripts]
+assay-clean = "assaytablecleaner.cli:app"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
