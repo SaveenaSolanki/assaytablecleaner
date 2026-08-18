@@ -5,7 +5,7 @@
 **Parse, standardize & convert bioassay measurement values — unit-aware, flag-driven, reproducible.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-38bdf8)](https://www.python.org/)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-ac946f)](https://www.python.org/)
 [![Tests](https://github.com/SaveenaSolanki/assaytablecleaner/actions/workflows/tests.yml/badge.svg)](https://github.com/SaveenaSolanki/assaytablecleaner/actions/workflows/tests.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/SaveenaSolanki/assaytablecleaner)](https://github.com/SaveenaSolanki/assaytablecleaner)
 [![Repo Size](https://img.shields.io/github/repo-size/SaveenaSolanki/assaytablecleaner)](https://github.com/SaveenaSolanki/assaytablecleaner)
