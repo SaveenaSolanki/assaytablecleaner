@@ -9,7 +9,7 @@
 [![Tests](https://github.com/SaveenaSolanki/assaytablecleaner/actions/workflows/tests.yml/badge.svg)](https://github.com/SaveenaSolanki/assaytablecleaner/actions/workflows/tests.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/SaveenaSolanki/assaytablecleaner)](https://github.com/SaveenaSolanki/assaytablecleaner)
 [![Repo Size](https://img.shields.io/github/repo-size/SaveenaSolanki/assaytablecleaner)](https://github.com/SaveenaSolanki/assaytablecleaner)
-[![Part of CompBio Toolkit Suite](https://img.shields.io/badge/CompBio%20Toolkit%20Suite-Core%20Tool-8b5cf6)](https://github.com/SaveenaSolanki/compbio-toolkit-suite)
+[![Part of CompBio Toolkit Suite](https://img.shields.io/badge/CompBio%20Toolkit%20Suite-Core%20Tool-ac946f)](https://github.com/SaveenaSolanki/compbio-toolkit-suite)
 
 </div>
 
