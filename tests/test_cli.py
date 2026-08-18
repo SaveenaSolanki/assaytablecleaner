@@ -1,11 +1,20 @@
 """Tests for assaytablecleaner CLI."""
 
+import re
+
 import pytest
 from typer.testing import CliRunner
 
 from assaytablecleaner.cli import app
 
 runner = CliRunner()
+
+ANSI_ESCAPE = re.compile(r"\x1b\[[0-9;]*m")
+
+
+def strip_ansi(text: str) -> str:
+    """Remove ANSI color/format escape sequences from CLI output."""
+    return ANSI_ESCAPE.sub("", text)
 
 
 def test_help():
@@ -20,10 +29,11 @@ def test_clean_help():
     """Test that clean --help shows options."""
     result = runner.invoke(app, ["clean", "--help"])
     assert result.exit_code == 0
-    assert "--input" in result.stdout
-    assert "--out" in result.stdout
-    assert "--value-col" in result.stdout
-    assert "--unit-col" in result.stdout
+    stdout = strip_ansi(result.stdout)
+    assert "--input" in stdout
+    assert "--out" in stdout
+    assert "--value-col" in stdout
+    assert "--unit-col" in stdout
 
 
 def test_version():
